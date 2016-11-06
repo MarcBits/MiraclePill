@@ -178,7 +178,7 @@
                                 <state key="normal" title="Button" image="buyNowBtn"/>
                                 <connections>
                                     <action selector="buyNowBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JcP-ND-XJb"/>
-                                    <segue destination="IHa-kS-5eI" kind="show" id="LyE-nw-7EE"/>
+                                    <segue destination="NAe-XP-Qw3" kind="show" id="Nmt-tU-IbP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -248,32 +248,40 @@
             </objects>
             <point key="canvasLocation" x="135.19999999999999" y="138.0809595202399"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="rNd-X9-fFl">
+        <!--SuccessVC-->
+        <scene sceneID="6bt-8a-dPV">
             <objects>
-                <viewController id="IHa-kS-5eI" sceneMemberID="viewController">
+                <viewController id="NAe-XP-Qw3" customClass="SuccessVC" customModule="MiraclePill" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zEi-LX-6cw"/>
-                        <viewControllerLayoutGuide type="bottom" id="aK7-5C-yeb"/>
+                        <viewControllerLayoutGuide type="top" id="1Cp-hS-SBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="v0U-1B-44M"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VzQ-XC-0Oz">
+                    <view key="view" contentMode="scaleToFill" id="ANo-bv-wUq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-ah-Yrl">
-                                <rect key="frame" x="97" y="243.5" width="180" height="180"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjl-ZR-0dQ">
+                                <rect key="frame" x="98" y="243" width="179" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="DE6-vj-zKW"/>
+                                    <constraint firstAttribute="height" constant="180" id="fpG-d7-lqk"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="successIndicator"/>
+                                <connections>
+                                    <action selector="successBtnClicked:" destination="NAe-XP-Qw3" eventType="touchUpInside" id="Wl4-6q-VOz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nqS-ah-Yrl" firstAttribute="centerY" secondItem="VzQ-XC-0Oz" secondAttribute="centerY" id="UdH-L6-Xrv"/>
-                            <constraint firstItem="nqS-ah-Yrl" firstAttribute="centerX" secondItem="VzQ-XC-0Oz" secondAttribute="centerX" id="gC4-Aa-7gd"/>
+                            <constraint firstItem="Cjl-ZR-0dQ" firstAttribute="centerY" secondItem="ANo-bv-wUq" secondAttribute="centerY" id="a5v-ZM-nPo"/>
+                            <constraint firstItem="Cjl-ZR-0dQ" firstAttribute="centerX" secondItem="ANo-bv-wUq" secondAttribute="centerX" id="nIJ-eO-JeJ"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Umn-hO-7uE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgy-sv-j58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845.60000000000002" y="135.38230884557723"/>
+            <point key="canvasLocation" x="949.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
